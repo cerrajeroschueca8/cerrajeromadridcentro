@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://thunderous-blini-7506fb.netlify.app/sitemap.xml
