@@ -14,15 +14,24 @@
     <link rel="icon" href="/favicon.ico" sizes="any">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
+    <!-- Canonical -->
+    <link rel="canonical" href="https://thunderous-blini-7506fb.netlify.app/">
+
     <!-- Vista previa al compartir (WhatsApp, Facebook, etc.) -->
     <meta property="og:type" content="website">
     <meta property="og:locale" content="es_ES">
     <meta property="og:site_name" content="Cerrajeros Chueca 24H">
+    <meta property="og:url" content="https://thunderous-blini-7506fb.netlify.app/">
     <meta property="og:title" content="Cerrajero urgente en Chueca 24h | Cerrajeros Chueca 24H">
     <meta property="og:description" content="Cerrajero urgente en Chueca, Madrid, las 24 horas. Apertura de puertas, cambio de cerraduras y bombines antibumping. Llama al 624 85 81 51.">
-    <meta name="twitter:card" content="summary">
+    <meta property="og:image" content="https://thunderous-blini-7506fb.netlify.app/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Cerrajeros Chueca 24H: cerrajero urgente 24 horas en Chueca, Madrid">
+    <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Cerrajero urgente en Chueca 24h | Cerrajeros Chueca 24H">
     <meta name="twitter:description" content="Cerrajero urgente en Chueca, Madrid, las 24 horas. Apertura de puertas, cambio de cerraduras y bombines antibumping. Llama al 624 85 81 51.">
+    <meta name="twitter:image" content="https://thunderous-blini-7506fb.netlify.app/og-image.jpg">
 
     <!-- Tipografías: se cargan sin bloquear el pintado de la página -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,12 +39,15 @@
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Abril+Fatface&display=swap" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Abril+Fatface&display=swap"></noscript>
 
-    <!-- Datos estructurados: negocio local (cerrajero) -->
+    <!-- Datos estructurados: negocio local (cerrajero) y preguntas frecuentes -->
     <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Locksmith",
+  "@id": "https://thunderous-blini-7506fb.netlify.app/#negocio",
   "name": "Cerrajeros Chueca 24H",
+  "url": "https://thunderous-blini-7506fb.netlify.app/",
+  "image": "https://thunderous-blini-7506fb.netlify.app/og-image.jpg",
   "description": "Cerrajero urgente en Chueca, Madrid, las 24 horas: apertura de puertas, cambio de cerraduras, bombines antibumping y reparación de cerraduras.",
   "telephone": "+34624858151",
   "address": {
@@ -86,6 +98,7 @@
       "name": "Alonso Martínez, Madrid"
     }
   ],
+  "hasMap": "https://www.google.com/maps/search/?api=1&query=Calle%20del%20Clavel%2C%208%2C%2028004%20Madrid",
   "hasOfferCatalog": {
     "@type": "OfferCatalog",
     "name": "Servicios de cerrajería",
@@ -141,6 +154,71 @@
       }
     ]
   }
+}
+    </script>
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿Cuánto tardáis en llegar a Chueca?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Depende de dónde estés y de la demanda del momento. Al llamar te damos un tiempo estimado de llegada."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Trabajáis las 24 horas en Chueca?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sí, atendemos urgencias a cualquier hora, todos los días del año, incluidos festivos y fines de semana."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cuánto cuesta un cerrajero urgente en Chueca?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Depende del tipo de puerta, de la cerradura y de la hora. Te damos el precio antes de empezar para que no haya sorpresas."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Podéis abrir sin dañar la cerradura?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "En muchos casos sí. Si por el tipo de cerradura hiciera falta cambiarla, te lo explicamos antes de hacerlo."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Qué es un bombín antibumping?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Es un bombín diseñado para resistir una técnica de apertura forzada muy conocida. Es una mejora sencilla que aumenta la protección de tu puerta."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "He perdido las llaves, ¿qué hago?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Llámanos para abrirte la puerta. Después te recomendamos cambiar el bombín, sobre todo si no sabes dónde han podido quedar las llaves."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Atendéis solo en Chueca?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nuestra zona principal es Chueca y los barrios cercanos. Si estás en otra zona, llámanos y te decimos si podemos atenderte."
+      }
+    }
+  ]
 }
     </script>
 
