@@ -1,0 +1,75 @@
+[build]
+  publish = "."
+
+# Todo lo que llegue por un dominio antiguo o por www se redirige (301) al dominio principal.
+[[redirects]]
+  from = "https://thunderous-blini-7506fb.netlify.app/*"
+  to = "https://cerrajeromadridcentro.es/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://thunderous-blini-7506fb.netlify.app/*"
+  to = "https://cerrajeromadridcentro.es/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://cerrajeroschueca24h.netlify.app/*"
+  to = "https://cerrajeromadridcentro.es/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://cerrajeroschueca24h.netlify.app/*"
+  to = "https://cerrajeromadridcentro.es/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://main--cerrajeroschueca24h.netlify.app/*"
+  to = "https://cerrajeromadridcentro.es/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://main--cerrajeroschueca24h.netlify.app/*"
+  to = "https://cerrajeromadridcentro.es/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.cerrajeromadridcentro.es/*"
+  to = "https://cerrajeromadridcentro.es/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://www.cerrajeromadridcentro.es/*"
+  to = "https://cerrajeromadridcentro.es/:splat"
+  status = 301
+  force = true
+
+# Los despliegues de previsualización y de rama no deben indexarse.
+[context.deploy-preview]
+  [[context.deploy-preview.headers]]
+    for = "/*"
+    [context.deploy-preview.headers.values]
+      X-Robots-Tag = "noindex"
+
+[context.branch-deploy]
+  [[context.branch-deploy.headers]]
+    for = "/*"
+    [context.branch-deploy.headers.values]
+      X-Robots-Tag = "noindex"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+[[headers]]
+  for = "/estilos.css"
+  [headers.values]
+    Cache-Control = "public, max-age=86400, must-revalidate"
