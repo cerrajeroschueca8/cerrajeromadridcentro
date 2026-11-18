@@ -1215,3 +1215,7 @@
         details > summary::-webkit-details-marker { display: none; }
         details[open] .chev { transform: rotate(180deg); }
         @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .animate-ping, .animate-pulse { animation: none; } }
+
+/* Tipografías alojadas en esta web (sin peticiones a Google Fonts) */
+@font-face { font-family: "DM Sans"; font-style: normal; font-weight: 400 700; font-display: swap; src: url(/dmsans.woff) format("woff"); }
+@font-face { font-family: "Abril Fatface"; font-style: normal; font-weight: 400; font-display: swap; src: url(/abrilfatface.woff) format("woff"); }

@@ -70,6 +70,11 @@
     Referrer-Policy = "strict-origin-when-cross-origin"
 
 [[headers]]
+  for = "/*.woff"
+  [headers.values]
+    Cache-Control = "public, max-age=2592000"
+
+[[headers]]
   for = "/estilos.css"
   [headers.values]
     Cache-Control = "public, max-age=86400, must-revalidate"
